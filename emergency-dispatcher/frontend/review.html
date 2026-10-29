@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emergency Dispatcher Review</title>
+    <link rel="stylesheet" href="/demo-static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Emergency Dispatcher</p>
+        <h1>Session Review</h1>
+        <p class="subtitle">
+          Inspect recent demo runs, including transcripts, tool calls, and client-reported events.
+        </p>
+      </section>
+
+      <section class="controls card">
+        <div class="button-row">
+          <button id="refresh-btn" class="button primary">Refresh Sessions</button>
+          <a class="button ghost link-button" href="/demo">Back To Demo</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="card-head">
+            <h2>Recent Sessions</h2>
+            <p>Most recent runs are listed first</p>
+          </div>
+          <div id="session-list" class="log compact"></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Session Detail</h2>
+            <p>Click a session to inspect its outcome</p>
+          </div>
+          <div id="session-detail" class="log"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="/demo-static/review.js"></script>
+  </body>
+</html>

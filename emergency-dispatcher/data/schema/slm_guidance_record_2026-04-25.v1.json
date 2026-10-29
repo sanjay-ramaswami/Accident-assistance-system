@@ -1,0 +1,136 @@
+{
+  "$defs": {
+    "FinalExtractedFields": {
+      "properties": {
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location"
+        },
+        "issue_type": {
+          "title": "Issue Type",
+          "type": "string"
+        },
+        "victim_breathing": {
+          "default": "unknown",
+          "title": "Victim Breathing",
+          "type": "string"
+        },
+        "victim_bleeding": {
+          "default": "unknown",
+          "title": "Victim Bleeding",
+          "type": "string"
+        },
+        "victim_conscious": {
+          "default": "unknown",
+          "title": "Victim Conscious",
+          "type": "string"
+        },
+        "victim_count": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": "unknown",
+          "title": "Victim Count"
+        },
+        "caller_safe": {
+          "default": "unknown",
+          "title": "Caller Safe",
+          "type": "string"
+        },
+        "priority": {
+          "title": "Priority",
+          "type": "string"
+        }
+      },
+      "required": [
+        "issue_type",
+        "priority"
+      ],
+      "title": "FinalExtractedFields",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "raw_utterance": {
+      "minLength": 8,
+      "title": "Raw Utterance",
+      "type": "string"
+    },
+    "previous_severity": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Previous Severity",
+      "type": "integer"
+    },
+    "extracted_fields": {
+      "$ref": "#/$defs/FinalExtractedFields"
+    },
+    "severity_score": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Severity Score",
+      "type": "integer"
+    },
+    "severity_delta": {
+      "maximum": 100,
+      "minimum": -100,
+      "title": "Severity Delta",
+      "type": "integer"
+    },
+    "severity_drivers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Severity Drivers",
+      "type": "array"
+    },
+    "human_recommended": {
+      "title": "Human Recommended",
+      "type": "boolean"
+    },
+    "human_required": {
+      "title": "Human Required",
+      "type": "boolean"
+    },
+    "agent_should_continue": {
+      "title": "Agent Should Continue",
+      "type": "boolean"
+    },
+    "constraint_mode": {
+      "title": "Constraint Mode",
+      "type": "string"
+    },
+    "address_in_utterance": {
+      "title": "Address In Utterance",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "raw_utterance",
+    "previous_severity",
+    "extracted_fields",
+    "severity_score",
+    "severity_delta",
+    "severity_drivers",
+    "human_recommended",
+    "human_required",
+    "agent_should_continue",
+    "constraint_mode",
+    "address_in_utterance"
+  ],
+  "title": "GuidanceRecord",
+  "type": "object"
+}

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emergency-dispatcher"
+version = "0.1.0"
+description = "Lean hackathon starter for a noisy-audio emergency dispatch voice agent."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "aic-sdk==2.2.0",
+  "fastapi>=0.116,<1",
+  "google-genai>=2.34,<3",
+  "gradbot==0.1.6",
+  "gradium>=0.1.35",
+  "httpx>=0.28,<1",
+  "numpy>=2.2,<3",
+  "openai>=1.78,<2",
+  "pydantic>=2.11,<3",
+  "pydantic-settings>=2.8,<3",
+  "python-dotenv>=1.1,<2",
+  "scikit-learn==1.9.1",
+  "uvicorn>=0.35,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "road-fire-berlin",
+    "title": "Vehicle smoke on the roadside",
+    "noise_profile": "traffic, wind, passing trucks",
+    "transcript": "Hi please hurry, I'm on Müllerstraße near number 128, Berlin and there is smoke coming out of a delivery van after a crash. The driver looks trapped and people are yelling around me.",
+    "expected_issue_type": "fire",
+    "expected_priority": "critical",
+    "expected_address": "128 Müllerstraße, Berlin"
+  },
+  {
+    "id": "factory-collapse",
+    "title": "Worker collapse on industrial floor",
+    "noise_profile": "machinery, alarms, shouted speech",
+    "transcript": "Hello we need an ambulance at 42 Edison Park, Berlin. A worker just collapsed near the loading bay and he is not breathing right now. It's very loud in here.",
+    "expected_issue_type": "medical",
+    "expected_priority": "critical",
+    "expected_address": "42 Edison Park, Berlin"
+  },
+  {
+    "id": "gas-leak-flat",
+    "title": "Possible gas leak in an apartment building",
+    "noise_profile": "hallway echo, panicked speech, babies crying",
+    "transcript": "I think there's a gas leak at 77 Sonnenallee, Berlin. People are coughing and I can smell fumes in the stairwell. Please send someone fast.",
+    "expected_issue_type": "hazmat",
+    "expected_priority": "high",
+    "expected_address": "77 Sonnenallee, Berlin"
+  },
+  {
+    "id": "road-accident-unconscious",
+    "title": "Road accident with unconscious casualty",
+    "noise_profile": "traffic, shocked caller",
+    "transcript": "There has been a road accident. One person is unconscious and only gasping. I am standing near the road.",
+    "expected_issue_type": "road accident",
+    "expected_priority": "critical"
+  },
+  {
+    "id": "severe-bleeding",
+    "title": "Severe bleeding",
+    "noise_profile": "panicked caller, nearby activity",
+    "transcript": "A person has a deep arm wound and the blood is spurting. We are at a safe place and someone is calling the local emergency number.",
+    "expected_issue_type": "severe bleeding",
+    "expected_priority": "critical"
+  },
+  {
+    "id": "chest-pain-breathing",
+    "title": "Chest pain and difficulty breathing",
+    "noise_profile": "quiet home, worried caller",
+    "transcript": "An older man has chest pain and difficulty breathing. He is awake but can only speak a few words.",
+    "expected_issue_type": "chest pain and breathing difficulty",
+    "expected_priority": "critical"
+  },
+  {
+    "id": "multiple-casualties",
+    "title": "Multiple casualties after a collision",
+    "noise_profile": "traffic, multiple people speaking",
+    "transcript": "There was a collision near the junction. Three people are injured. One is bleeding heavily and another may be trapped.",
+    "expected_issue_type": "road accident with multiple casualties",
+    "expected_priority": "critical"
+  },
+  {
+    "id": "ambiguous-location",
+    "title": "Ambiguous Marine Drive location",
+    "noise_profile": "traffic, caller unsure of exact location",
+    "transcript": "Someone collapsed near Marine Drive, but I do not know which city. I am away from traffic.",
+    "expected_issue_type": "person collapsed",
+    "expected_priority": "critical"
+  },
+  {
+    "id": "conflicting-reports",
+    "title": "Conflicting breathing reports",
+    "noise_profile": "caller self-correction",
+    "transcript": "He is breathing normally. Wait, I looked again and he is not breathing normally, only gasping.",
+    "expected_issue_type": "conflicting breathing report",
+    "expected_priority": "critical"
+  },
+  {
+    "id": "complaint-code-unavailable",
+    "title": "Complaint code unavailable",
+    "noise_profile": "clear speech, no code supplied",
+    "transcript": "A person feels weak and dizzy. We do not have a complaint code. Please help us work out what information is needed.",
+    "expected_issue_type": "unclear medical concern",
+    "expected_priority": "unknown"
+  },
+  {
+    "id": "unsupported-description",
+    "title": "Unsupported or uncertain description",
+    "noise_profile": "vague caller description",
+    "transcript": "Something happened and someone may need help, but I do not know what happened or whether anyone is injured.",
+    "expected_issue_type": "unclear emergency",
+    "expected_priority": "unknown"
+  },
+  {
+    "id": "classifier-unavailable",
+    "title": "Natural-language classifier unavailable",
+    "noise_profile": "plain caller description without a code",
+    "transcript": "A person says they feel unwell, but cannot describe a symptom and does not have a complaint code.",
+    "expected_issue_type": "unclear medical concern",
+    "expected_priority": "unknown",
+    "demo_condition": "text_classifier_unavailable"
+  },
+  {
+    "id": "geocoding-unavailable",
+    "title": "Location cannot be resolved offline",
+    "noise_profile": "ambiguous location clue",
+    "transcript": "Someone is hurt near the river path. I do not know the city, street, or nearest landmark.",
+    "expected_issue_type": "unclear injury",
+    "expected_priority": "unknown",
+    "demo_condition": "external_geocoding_disabled"
+  },
+  {
+    "id": "provider-timeout-offline",
+    "title": "Provider timeout status (offline simulation)",
+    "noise_profile": "deterministic failure-state demonstration",
+    "transcript": "Please help. There is an emergency, but I cannot explain more yet.",
+    "expected_issue_type": "unclear emergency",
+    "expected_priority": "unknown",
+    "demo_condition": "provider_timeout_offline",
+    "notice": "Offline timeout-state demo only; no live provider request, assistant reply, or audio was generated."
+  }
+]

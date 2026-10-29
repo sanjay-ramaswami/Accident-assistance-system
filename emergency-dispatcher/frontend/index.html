@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emergency Dispatcher Demo</title>
+    <link rel="stylesheet" href="/demo-static/styles.css?v=20261030-location-dispatch-1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Emergency Dispatcher</p>
+        <h1>Live Dispatch Console</h1>
+        <p class="subtitle">
+          One-screen demo view for the live call, the current dispatch state, and every tool
+          call the system makes while the conversation is still happening.
+        </p>
+      </section>
+
+      <section class="top-deck">
+        <section class="controls card controls-rail">
+          <div class="controls-head">
+            <p class="card-kicker">Dispatch Console</p>
+            <h2>Live Controls</h2>
+            <p>Keep mode switching and latency checks close, without taking over the whole page.</p>
+          </div>
+
+          <div class="status-row">
+            <div>
+              <p class="label">Connection</p>
+              <p id="status" class="status idle">Idle</p>
+            </div>
+            <div>
+              <p class="label">Playback Buffer</p>
+              <p id="buffer-metric" class="metric">0 ms</p>
+            </div>
+            <div>
+              <p class="label">Active Session</p>
+              <p id="session-metric" class="metric subtle">Not started</p>
+            </div>
+            <div>
+              <p class="label">Dispatch State</p>
+              <p id="dispatch-metric" class="metric subtle">Waiting</p>
+            </div>
+            <div>
+              <p class="label">Dispatcher Audio</p>
+              <p id="playback-status" class="metric subtle" role="status" aria-live="polite">Waiting</p>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button id="connect-btn" class="button primary">Start Call</button>
+            <button id="disconnect-btn" class="button ghost" disabled>Stop</button>
+            <button id="unlock-audio-btn" class="button ghost" type="button" hidden>Enable audio playback</button>
+            <button id="clear-btn" class="button ghost">Clear Log</button>
+          </div>
+
+          <div class="mode-row">
+            <label class="mode-control" for="dispatch-mode-select">
+              <span class="label">Dispatch Mode</span>
+              <select id="dispatch-mode-select" class="mode-select">
+                <option value="slm">SLM + LLM</option>
+                <option value="llm_only">LLM only</option>
+              </select>
+            </label>
+            <p class="mode-hint">
+              Use <strong>LLM only</strong> to compare the raw voice path against the full
+              <strong>SLM + LLM</strong> path.
+            </p>
+          </div>
+          <div class="mode-row">
+            <label class="mode-control" for="voice-provider-select">
+              <span class="label">Voice Provider</span>
+              <select id="voice-provider-select" class="mode-select">
+                <option value="gemini" selected>Gemini Live</option>
+                <option value="gradbot">Gradium + OpenAI</option>
+              </select>
+            </label>
+            <p class="mode-hint">Gemini Live is selected by default and uses its own audio-to-audio session. Gradium + OpenAI remains available as an alternate provider.</p>
+          </div>
+        </section>
+
+        <div class="command-board">
+          <article class="card operator-card">
+            <div class="card-head">
+              <h2>Human Desk</h2>
+              <p>Severity signal, operator brief, and a dummy takeover control</p>
+            </div>
+            <div class="operator-shell">
+              <div id="severity-hero" class="severity-hero severity-green">
+                <div>
+                  <p class="severity-label">Advisory severity · heuristic</p>
+                  <strong id="severity-score">0 / 100</strong>
+                  <p id="severity-subtext" class="severity-subtext">Waiting for a live incident.</p>
+                </div>
+                <button id="takeover-btn" class="button takeover-button severity-green" type="button">
+                  Human Standby
+                </button>
+              </div>
+              <div id="operator-report" class="operator-report">
+                <article class="entry event">
+                  <div class="body">Start a call to populate the human handoff brief.</div>
+                </article>
+              </div>
+            </div>
+          </article>
+
+          <article class="card situation-card">
+            <div class="card-head situation-head">
+              <div>
+                <p class="card-kicker">Live Situation Board</p>
+                <h2>Map And Hard Facts</h2>
+                <p>Put the pin, the current location confidence, and the latest grounded facts in one place.</p>
+              </div>
+            </div>
+            <section class="dashboard-section emergency-assessment" aria-labelledby="assessment-title">
+              <div class="section-label">Evidence-linked incident state · updates from finalized speech</div>
+              <h3 id="assessment-title">Live Emergency Assessment</h3>
+              <div id="emergency-assessment-panel" class="assessment-panel" aria-live="polite">
+                <p>Awaiting a finalized caller utterance. Unknown information stays marked unknown.</p>
+              </div>
+            </section>
+            <div class="map-shell map-shell-prominent">
+              <div id="map" class="map-panel map-panel-hero"></div>
+              <button id="map-correction-toggle" class="button secondary map-correction-toggle" type="button" disabled>Select incident point on map</button>
+              <div id="map-status" class="map-status">Waiting for a geocoded location.</div>
+            </div>
+            <div class="situation-summary">
+              <div id="snapshot-grid" class="snapshot-grid"></div>
+              <div class="dashboard-section">
+                <div class="section-label">Services</div>
+                <div id="service-panel" class="service-panel">
+                  <article class="service-card service-card-pending">
+                    <div class="service-top">
+                      <strong>Services</strong>
+                      <span class="service-state">Pending</span>
+                    </div>
+                    <p>Start a call to populate the service board.</p>
+                    <small>Police, ambulance, and fire updates will appear here.</small>
+                  </article>
+                </div>
+              </div>
+              <div class="dashboard-section">
+                <div class="section-label">Assigned Labels</div>
+                <div id="label-chips" class="chip-row"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card triage-demo-card demo-scenario-card" aria-labelledby="incident-demo-title">
+        <div class="card-head">
+          <div>
+            <p class="card-kicker">Deterministic local scenario</p>
+            <h2 id="incident-demo-title">Test An Emergency Scenario</h2>
+            <p>Run a bundled synthetic caller transcript through local triage and simulation. Optional geocoding uses the configured provider; no real dispatch is contacted.</p>
+          </div>
+        </div>
+        <div class="triage-demo-form">
+          <label class="label" for="incident-demo-scenario">Scenario</label>
+          <select id="incident-demo-scenario" class="triage-demo-input"></select>
+          <label class="label" for="incident-demo-location">Incident place (optional)</label>
+          <input id="incident-demo-location" class="triage-demo-input" maxlength="240" placeholder="e.g. Lulu Mall, Kochi" />
+          <label class="checkbox-label"><input id="incident-demo-geocode" type="checkbox" checked /> Resolve the scenario's caller-stated place using the configured geocoder</label>
+          <label class="checkbox-label"><input id="incident-demo-fallback" type="checkbox" /> Use the configured demo fallback if no place resolves (clearly simulated)</label>
+          <div class="triage-demo-controls">
+            <span class="first-aid-note">Synthetic input · local rules · optional configured geocoding · simulation only</span>
+            <button id="incident-demo-run" class="button primary" type="button">Run Simulated Scenario</button>
+            <button id="incident-demo-reset" class="button secondary" type="button">Reset Demo</button>
+          </div>
+        </div>
+        <div id="incident-demo-status" class="triage-demo-status" role="status" aria-live="polite">Ready. No live call will be started.</div>
+      </section>
+
+      <section class="card first-aid-card" aria-labelledby="first-aid-title">
+        <div class="card-head">
+          <div>
+            <p class="card-kicker">Offline local rules</p>
+            <h2 id="first-aid-title">First-Aid Guidance</h2>
+            <p>Source-linked guidance from the latest caller transcript or a typed description. Not a diagnosis or clinically validated system.</p>
+          </div>
+        </div>
+        <form id="first-aid-form" class="triage-demo-form">
+          <label class="label" for="first-aid-text">Caller description</label>
+          <textarea id="first-aid-text" class="triage-demo-input" rows="2" maxlength="2000" placeholder="Describe what happened or let local rules analyze a caller transcript."></textarea>
+          <div class="triage-demo-controls">
+            <span class="first-aid-note">Runs locally · no LLM request · advisory only</span>
+            <button id="first-aid-submit" class="button primary" type="submit">Show guidance</button>
+          </div>
+        </form>
+        <div id="first-aid-status" class="triage-demo-status" role="status" aria-live="polite">Ready · local first-aid rules available.</div>
+        <div id="first-aid-result" class="first-aid-result" aria-live="polite"></div>
+      </section>
+
+      <section class="card triage-demo-card">
+        <div class="card-head">
+          <div>
+            <p class="card-kicker">Local trained research model</p>
+            <h2>ML Complaint Classification</h2>
+            <p>Run the existing trained model manually, or inspect a live result only when a caller explicitly states a supported complaint code.</p>
+          </div>
+        </div>
+        <form id="complaint-code-form" class="triage-demo-form">
+          <label class="label" for="complaint-code-input">Complaint code</label>
+          <input id="complaint-code-input" class="triage-demo-input" type="text" maxlength="24" placeholder="Example: R07.9" autocomplete="off" aria-describedby="complaint-code-scope">
+          <div class="triage-demo-controls">
+            <span class="first-aid-note">Trained local model · advisory · human review required</span>
+            <button id="complaint-code-submit" class="button primary" type="submit">Run ML Classification</button>
+          </div>
+        </form>
+        <p id="complaint-code-scope" class="triage-demo-note">Broad complaint-code classification only. It does not interpret arbitrary symptoms, predict medical severity, diagnose, authorize dispatch, or replace emergency protocols. Human review is required. Live classification is advisory and may remain unavailable when no reliable supported code is stated.</p>
+        <div id="complaint-code-status" class="triage-demo-status" role="status" aria-live="polite">Enter a code to run the trained local model.</div>
+        <pre id="complaint-code-result" class="triage-demo-result" aria-live="polite" hidden></pre>
+        <div class="triage-demo-divider"></div>
+        <h3>Live ML Analysis</h3>
+        <div id="live-ml-status" class="triage-demo-status" role="status" aria-live="polite">Not applicable — complaint code unavailable</div>
+        <pre id="live-ml-result" class="triage-demo-result" aria-live="polite" hidden></pre>
+      </section>
+
+      <section class="card triage-demo-card">
+        <div class="card-head">
+          <div>
+            <p class="card-kicker">Offline friendly</p>
+            <h2>Try Triage With Text</h2>
+            <p>Run one caller description through the configured SLM or a clearly labelled demo-only rule fallback.</p>
+          </div>
+        </div>
+        <form id="triage-demo-form" class="triage-demo-form">
+          <label class="label" for="triage-demo-text">Caller description</label>
+          <textarea id="triage-demo-text" class="triage-demo-input" rows="3" maxlength="2000" required placeholder="Example: There was a crash near Alexanderplatz. One person is trapped and bleeding."></textarea>
+          <div class="triage-demo-controls">
+            <label class="mode-control" for="triage-demo-engine">
+              <span class="label">Inference</span>
+              <select id="triage-demo-engine" class="mode-select">
+                <option value="auto">Configured model (fallback if unavailable)</option>
+                <option value="slm">Pioneer SLM</option>
+                <option value="heuristic">Local rules (demo only; not ML)</option>
+              </select>
+            </label>
+            <button id="triage-demo-submit" class="button primary" type="submit">Analyze text</button>
+          </div>
+        </form>
+        <p class="triage-demo-note">Advisory decision support only. It does not place a call, dispatch responders, or replace emergency protocols.</p>
+        <div id="triage-demo-status" class="triage-demo-status" role="status" aria-live="polite">Ready for a sample description.</div>
+        <pre id="triage-demo-result" class="triage-demo-result" hidden></pre>
+      </section>
+
+      <section class="dispatch-layout">
+        <article class="card primary-pane">
+          <div class="card-head">
+            <h2>Live Dialogue</h2>
+            <p>Running caller transcript, dispatcher transcript, and a lightly cleaned caller view</p>
+          </div>
+          <div class="dialogue-stack">
+            <section class="stream-panel">
+              <div class="stream-head">
+                <h3>Caller</h3>
+                <p>Append-only recognized speech, kept as heard; dispatcher replies default to English</p>
+              </div>
+              <div id="caller-stream" class="stream-body">Waiting for caller audio.</div>
+            </section>
+
+            <section class="stream-panel">
+              <div class="stream-head">
+                <h3>Dispatcher</h3>
+                <p>Append-only TTS transcript as spoken; English unless the caller explicitly requests another language</p>
+              </div>
+              <div id="agent-stream" class="stream-body">Waiting for dispatcher audio.</div>
+              <aside id="provider-timeout-status" class="demo-fallback" role="status" aria-live="polite" hidden>
+                <strong>Live provider response not confirmed</strong>
+                <p>No reply was generated for the live call. Check the provider status and ask the caller for urgent details directly.</p>
+                <small>No simulated assistant reply was inserted. No emergency services have been contacted.</small>
+              </aside>
+            </section>
+
+            <section class="stream-panel cleaned-panel">
+              <div class="stream-head">
+                <h3>Cleaned Caller</h3>
+                <p>Simple de-fluffed caller text for readability only</p>
+              </div>
+              <div id="cleaned-stream" class="stream-body">Waiting for cleaned caller text.</div>
+            </section>
+          </div>
+        </article>
+
+        <aside class="dashboard-stack secondary-stack">
+          <article class="card">
+            <div class="card-head">
+              <h2>Triage</h2>
+              <p>Structured SLM-shaped state, latest delta, and handoff readiness</p>
+            </div>
+            <div id="triage-panel" class="detail-panel">
+              <article class="entry event">
+                <div class="body">No triage state yet.</div>
+              </article>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h2>Demo Ticket</h2>
+              <p>Local record only; it is not sent to a dispatch service.</p>
+            </div>
+            <div id="ticket-panel" class="detail-panel">
+              <article class="entry event">
+                <div class="body">No incident ticket yet.</div>
+              </article>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h2>Gradbot Tool Chain</h2>
+              <p>An operator-friendly view of the deterministic assist workflow</p>
+            </div>
+            <div id="tool-chain" class="tool-chain">
+              <article class="entry event">
+                <div class="body">No deterministic assist chain activity yet.</div>
+              </article>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h2>Tool Timeline</h2>
+              <p>Every tool call, its arguments, and its result</p>
+            </div>
+            <div id="tool-log" class="tool-log">
+              <article class="entry event">
+                <div class="body">No tool calls yet.</div>
+              </article>
+            </div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="grid grid-wide">
+        <article class="card">
+          <div class="card-head">
+            <h2>Session Events</h2>
+            <p>Connection, turn, and error events</p>
+          </div>
+          <div id="event-log" class="log compact"></div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h2>Session Memory</h2>
+            <p>The dialogue is synced while the call is live so it can be inspected after stop</p>
+          </div>
+          <p id="session-report-status" class="map-status" role="status" aria-live="polite">Session report: waiting.</p>
+          <button id="retry-session-report" type="button" hidden>Retry session sync</button>
+          <div id="memory-panel" class="detail-panel">
+            <article class="entry event">
+              <div class="body">Start a call to populate the stored session state.</div>
+            </article>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="/static/js/opus-encoder.js"></script>
+    <script src="/static/js/audio-processor.js"></script>
+    <script src="/static/js/synced-audio-player.js"></script>
+    <script src="/demo-static/audio-utils.js?v=20261029-complaint-ml-1"></script>
+    <script src="/demo-static/location-utils.js?v=20261029-map-state-2"></script>
+    <script src="/demo-static/summary-utils.js?v=20261030-summary-evidence-2"></script>
+    <script src="/demo-static/complaint-code-utils.js?v=20261029-complaint-ml-1"></script>
+    <script src="/demo-static/live-ml-utils.js?v=20261030-explicit-code-2"></script>
+    <script src="/demo-static/session-report-utils.js?v=20261029-session-report-3"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="/demo-static/app.js?v=20261030-location-dispatch-4"></script>
+  </body>
+</html>

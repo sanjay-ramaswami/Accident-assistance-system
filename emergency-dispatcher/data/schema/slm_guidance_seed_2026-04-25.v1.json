@@ -1,0 +1,202 @@
+{
+  "$defs": {
+    "GuidanceSignals": {
+      "properties": {
+        "unconscious_or_unresponsive": {
+          "default": false,
+          "title": "Unconscious Or Unresponsive",
+          "type": "boolean"
+        },
+        "indoor_fire_immediate": {
+          "default": false,
+          "title": "Indoor Fire Immediate",
+          "type": "boolean"
+        },
+        "vehicle_fire_adjacent": {
+          "default": false,
+          "title": "Vehicle Fire Adjacent",
+          "type": "boolean"
+        },
+        "heavy_bleeding": {
+          "default": false,
+          "title": "Heavy Bleeding",
+          "type": "boolean"
+        },
+        "breathing_difficulty_with_smoke": {
+          "default": false,
+          "title": "Breathing Difficulty With Smoke",
+          "type": "boolean"
+        },
+        "trapped_or_cannot_exit": {
+          "default": false,
+          "title": "Trapped Or Cannot Exit",
+          "type": "boolean"
+        },
+        "weapon_shooting_explosion": {
+          "default": false,
+          "title": "Weapon Shooting Explosion",
+          "type": "boolean"
+        },
+        "bleeding_any": {
+          "default": false,
+          "title": "Bleeding Any",
+          "type": "boolean"
+        },
+        "injury_reported": {
+          "default": false,
+          "title": "Injury Reported",
+          "type": "boolean"
+        },
+        "children_unaccounted_for": {
+          "default": false,
+          "title": "Children Unaccounted For",
+          "type": "boolean"
+        },
+        "child_in_danger": {
+          "default": false,
+          "title": "Child In Danger",
+          "type": "boolean"
+        },
+        "child_unreachable": {
+          "default": false,
+          "title": "Child Unreachable",
+          "type": "boolean"
+        },
+        "vulnerable_adult_involved": {
+          "default": false,
+          "title": "Vulnerable Adult Involved",
+          "type": "boolean"
+        },
+        "situation_worsening": {
+          "default": false,
+          "title": "Situation Worsening",
+          "type": "boolean"
+        },
+        "caller_cannot_leave": {
+          "default": false,
+          "title": "Caller Cannot Leave",
+          "type": "boolean"
+        },
+        "caller_alone_with_victim": {
+          "default": false,
+          "title": "Caller Alone With Victim",
+          "type": "boolean"
+        },
+        "multiple_casualties": {
+          "default": false,
+          "title": "Multiple Casualties",
+          "type": "boolean"
+        },
+        "caller_calm_coherent": {
+          "default": false,
+          "title": "Caller Calm Coherent",
+          "type": "boolean"
+        },
+        "situation_stable_static": {
+          "default": false,
+          "title": "Situation Stable Static",
+          "type": "boolean"
+        },
+        "everyone_explicitly_safe": {
+          "default": false,
+          "title": "Everyone Explicitly Safe",
+          "type": "boolean"
+        },
+        "suspicious_transcript_streak": {
+          "default": 0,
+          "title": "Suspicious Transcript Streak",
+          "type": "integer"
+        },
+        "unresolved_address_attempts": {
+          "default": 0,
+          "title": "Unresolved Address Attempts",
+          "type": "integer"
+        }
+      },
+      "title": "GuidanceSignals",
+      "type": "object"
+    },
+    "SeedExtractedFields": {
+      "properties": {
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location"
+        },
+        "issue_type": {
+          "title": "Issue Type",
+          "type": "string"
+        },
+        "victim_breathing": {
+          "default": "unknown",
+          "title": "Victim Breathing",
+          "type": "string"
+        },
+        "victim_bleeding": {
+          "default": "unknown",
+          "title": "Victim Bleeding",
+          "type": "string"
+        },
+        "victim_conscious": {
+          "default": "unknown",
+          "title": "Victim Conscious",
+          "type": "string"
+        },
+        "victim_count": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "default": "unknown",
+          "title": "Victim Count"
+        },
+        "caller_safe": {
+          "default": "unknown",
+          "title": "Caller Safe",
+          "type": "string"
+        }
+      },
+      "required": [
+        "issue_type"
+      ],
+      "title": "SeedExtractedFields",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "raw_utterance": {
+      "minLength": 8,
+      "title": "Raw Utterance",
+      "type": "string"
+    },
+    "extracted_fields": {
+      "$ref": "#/$defs/SeedExtractedFields"
+    },
+    "address_in_utterance": {
+      "default": false,
+      "title": "Address In Utterance",
+      "type": "boolean"
+    },
+    "scoring_signals": {
+      "$ref": "#/$defs/GuidanceSignals"
+    }
+  },
+  "required": [
+    "raw_utterance",
+    "extracted_fields",
+    "scoring_signals"
+  ],
+  "title": "GuidanceSeed",
+  "type": "object"
+}

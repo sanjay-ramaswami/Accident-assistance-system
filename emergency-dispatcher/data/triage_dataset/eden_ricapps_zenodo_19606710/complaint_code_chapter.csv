@@ -1,0 +1,1090 @@
+complaint_code,chapter_id,chapter_label
+101.3,3,Sepsis / potential infection
+101.5,3,Sepsis / potential infection
+102,3,Sepsis / potential infection
+102.9,3,Sepsis / potential infection
+103.9,3,Sepsis / potential infection
+104.1,3,Sepsis / potential infection
+105.0,3,Sepsis / potential infection
+107.0,3,Sepsis / potential infection
+108.0,3,Sepsis / potential infection
+110.2,3,Sepsis / potential infection
+111.0,3,Sepsis / potential infection
+111.3,3,Sepsis / potential infection
+111.7,3,Sepsis / potential infection
+112.2,3,Sepsis / potential infection
+113.7,3,Sepsis / potential infection
+114.6,3,Sepsis / potential infection
+115.4,3,Sepsis / potential infection
+115.9,3,Sepsis / potential infection
+116.0,3,Sepsis / potential infection
+116.2,3,Sepsis / potential infection
+116.6,3,Sepsis / potential infection
+117.4,3,Sepsis / potential infection
+117.8,3,Sepsis / potential infection
+118.4,3,Sepsis / potential infection
+118.8,3,Sepsis / potential infection
+119.4,3,Sepsis / potential infection
+119.6,3,Sepsis / potential infection
+120,3,Sepsis / potential infection
+120.6,3,Sepsis / potential infection
+121.1,8,Other complaints
+121.3,8,Other complaints
+121.9,8,Other complaints
+122.1,8,Other complaints
+122.5,8,Other complaints
+123.3,8,Other complaints
+123.5,8,Other complaints
+124.3,8,Other complaints
+124.5,8,Other complaints
+124.7,8,Other complaints
+124.9,8,Other complaints
+125.1,8,Other complaints
+125.4,8,Other complaints
+125.5,8,Other complaints
+125.9,8,Other complaints
+126,8,Other complaints
+126.1,8,Other complaints
+126.6,8,Other complaints
+128,8,Other complaints
+128.7,8,Other complaints
+128.9,8,Other complaints
+129.7,8,Other complaints
+129.9,8,Other complaints
+130,8,Other complaints
+133,8,Other complaints
+144,8,Other complaints
+147.8,8,Other complaints
+152,8,Other complaints
+164,8,Other complaints
+166,8,Other complaints
+167.89,8,Other complaints
+171,8,Other complaints
+172,8,Other complaints
+182,8,Other complaints
+184,8,Other complaints
+187.2,8,Other complaints
+199,8,Other complaints
+199.1,8,Other complaints
+200,8,Other complaints
+202,8,Other complaints
+207,8,Other complaints
+213,8,Other complaints
+217,8,Other complaints
+221,8,Other complaints
+223,8,Other complaints
+227,8,Other complaints
+229,8,Other complaints
+231,8,Other complaints
+233,8,Other complaints
+235,8,Other complaints
+237,8,Other complaints
+241,8,Other complaints
+243,8,Other complaints
+249,8,Other complaints
+250,8,Other complaints
+250.8,8,Other complaints
+250.9,8,Other complaints
+253,8,Other complaints
+257,8,Other complaints
+261,8,Other complaints
+263,8,Other complaints
+265,8,Other complaints
+267,8,Other complaints
+269,8,Other complaints
+274.3,8,Other complaints
+277,8,Other complaints
+279.8,3,Sepsis / potential infection
+281,8,Other complaints
+283,8,Other complaints
+285,8,Other complaints
+285.9,8,Other complaints
+286.5,8,Other complaints
+287,8,Other complaints
+289,8,Other complaints
+293,2,Acute neurological
+298.9,7,Initial low vital risk
+299,7,Initial low vital risk
+30,8,Other complaints
+300,7,Initial low vital risk
+303,2,Acute neurological
+309,7,Initial low vital risk
+31,2,Acute neurological
+311,2,Acute neurological
+315,2,Acute neurological
+321,8,Other complaints
+322.9,2,Acute neurological
+323,2,Acute neurological
+325,2,Acute neurological
+329,2,Acute neurological
+33,8,Other complaints
+335,2,Acute neurological
+344.9,2,Acute neurological
+345.9,2,Acute neurological
+35,8,Other complaints
+356.9,8,Other complaints
+363.8,7,Initial low vital risk
+366.8,7,Initial low vital risk
+368.13,7,Initial low vital risk
+368.15,7,Initial low vital risk
+368.16,7,Initial low vital risk
+368.2,7,Initial low vital risk
+368.8,7,Initial low vital risk
+369.8,7,Initial low vital risk
+369.9,7,Initial low vital risk
+372.03,7,Initial low vital risk
+372.3,7,Initial low vital risk
+372.71,7,Initial low vital risk
+372.72,7,Initial low vital risk
+373.9,7,Initial low vital risk
+374.9,7,Initial low vital risk
+375.2,7,Initial low vital risk
+375.3,7,Initial low vital risk
+379.31,7,Initial low vital risk
+379.9,7,Initial low vital risk
+379.91,7,Initial low vital risk
+379.92,7,Initial low vital risk
+379.93,7,Initial low vital risk
+379.94,7,Initial low vital risk
+380.4,7,Initial low vital risk
+386,2,Acute neurological
+386.2,2,Acute neurological
+388.3,2,Acute neurological
+388.69,2,Acute neurological
+388.7,2,Acute neurological
+389,2,Acute neurological
+389.9,2,Acute neurological
+401,1,Cardiorespiratory
+401.1,1,Cardiorespiratory
+401.9,1,Cardiorespiratory
+428,1,Cardiorespiratory
+428.1,1,Cardiorespiratory
+428.9,1,Cardiorespiratory
+434.91,2,Acute neurological
+436,1,Cardiorespiratory
+436.58,1,Cardiorespiratory
+437.5,8,Other complaints
+438.89,8,Other complaints
+439.9,8,Other complaints
+442,1,Cardiorespiratory
+443.9,1,Cardiorespiratory
+444.2,1,Cardiorespiratory
+451,8,Other complaints
+451.9,8,Other complaints
+456,8,Other complaints
+459,8,Other complaints
+459.81,8,Other complaints
+459.9,8,Other complaints
+460,1,Cardiorespiratory
+462,1,Cardiorespiratory
+462.9,1,Cardiorespiratory
+464,1,Cardiorespiratory
+466,1,Cardiorespiratory
+470,7,Initial low vital risk
+470.08,7,Initial low vital risk
+472,7,Initial low vital risk
+476,7,Initial low vital risk
+477.9,7,Initial low vital risk
+478,7,Initial low vital risk
+478.9,7,Initial low vital risk
+480,1,Cardiorespiratory
+481.22,1,Cardiorespiratory
+486,1,Cardiorespiratory
+486.09,1,Cardiorespiratory
+487,1,Cardiorespiratory
+49,8,Other complaints
+490,1,Cardiorespiratory
+491.2,1,Cardiorespiratory
+491.22,1,Cardiorespiratory
+493.5,1,Cardiorespiratory
+493.9,1,Cardiorespiratory
+495,8,Other complaints
+503,8,Other complaints
+508.2,8,Other complaints
+511,3,Sepsis / potential infection
+513,3,Sepsis / potential infection
+515,8,Other complaints
+521,8,Other complaints
+525,8,Other complaints
+525.9,8,Other complaints
+528.9,8,Other complaints
+529.6,8,Other complaints
+53,8,Other complaints
+531,4,Medical-surgical abdominal
+535,4,Medical-surgical abdominal
+535.5,4,Medical-surgical abdominal
+536.8,4,Medical-surgical abdominal
+537.9,4,Medical-surgical abdominal
+541,4,Medical-surgical abdominal
+548,4,Medical-surgical abdominal
+557,4,Medical-surgical abdominal
+559.19,4,Medical-surgical abdominal
+559.6,4,Medical-surgical abdominal
+559.9,4,Medical-surgical abdominal
+560.9,4,Medical-surgical abdominal
+562.11,4,Medical-surgical abdominal
+564,4,Medical-surgical abdominal
+564.5,4,Medical-surgical abdominal
+569,4,Medical-surgical abdominal
+569.3,4,Medical-surgical abdominal
+569.83,4,Medical-surgical abdominal
+571,4,Medical-surgical abdominal
+575.9,4,Medical-surgical abdominal
+578,4,Medical-surgical abdominal
+578.1,4,Medical-surgical abdominal
+578.59,4,Medical-surgical abdominal
+578.9,4,Medical-surgical abdominal
+590,3,Sepsis / potential infection
+590.1,3,Sepsis / potential infection
+591,8,Other complaints
+595,8,Other complaints
+599,8,Other complaints
+599.7,8,Other complaints
+599.71,8,Other complaints
+599.9,8,Other complaints
+600.9,8,Other complaints
+604.9,8,Other complaints
+605,8,Other complaints
+607,8,Other complaints
+607.2,8,Other complaints
+607.83,8,Other complaints
+608.9,8,Other complaints
+610,8,Other complaints
+611.71,8,Other complaints
+611.89,8,Other complaints
+614.8,8,Other complaints
+623.8,8,Other complaints
+625.9,8,Other complaints
+626.6,8,Other complaints
+643,8,Other complaints
+647,8,Other complaints
+655,8,Other complaints
+659,8,Other complaints
+661,8,Other complaints
+669,8,Other complaints
+67,8,Other complaints
+671,8,Other complaints
+675,8,Other complaints
+679,8,Other complaints
+681,7,Initial low vital risk
+682.9,7,Initial low vital risk
+683,7,Initial low vital risk
+686,7,Initial low vital risk
+686.6,7,Initial low vital risk
+686.8,7,Initial low vital risk
+686.9,7,Initial low vital risk
+689.3,7,Initial low vital risk
+693,7,Initial low vital risk
+705,7,Initial low vital risk
+707,7,Initial low vital risk
+707.8,7,Initial low vital risk
+708,7,Initial low vital risk
+708.4,7,Initial low vital risk
+708.9,7,Initial low vital risk
+709.09,7,Initial low vital risk
+709.8,7,Initial low vital risk
+709.9,7,Initial low vital risk
+710.9,8,Other complaints
+715,8,Other complaints
+715.36,8,Other complaints
+716.9,8,Other complaints
+717,8,Other complaints
+719.4,7,Initial low vital risk
+719.45,7,Initial low vital risk
+719.7,7,Initial low vital risk
+722.1,7,Initial low vital risk
+723.1,7,Initial low vital risk
+723.3,7,Initial low vital risk
+724.1,7,Initial low vital risk
+724.2,7,Initial low vital risk
+724.3,7,Initial low vital risk
+724.5,7,Initial low vital risk
+724.6,7,Initial low vital risk
+726,7,Initial low vital risk
+729.1,7,Initial low vital risk
+729.5,7,Initial low vital risk
+729.81,7,Initial low vital risk
+729.88,7,Initial low vital risk
+729.89,7,Initial low vital risk
+729.99,7,Initial low vital risk
+732.1,8,Other complaints
+733.9,8,Other complaints
+736.05,8,Other complaints
+739.9,8,Other complaints
+742.2,8,Other complaints
+748.7,8,Other complaints
+756.5,8,Other complaints
+77,8,Other complaints
+780,2,Acute neurological
+780.01,2,Acute neurological
+780.09,2,Acute neurological
+780.2,2,Acute neurological
+780.26,2,Acute neurological
+780.3,2,Acute neurological
+780.4,2,Acute neurological
+780.5,2,Acute neurological
+780.6,2,Acute neurological
+780.69,2,Acute neurological
+780.7,2,Acute neurological
+780.79,2,Acute neurological
+780.89,2,Acute neurological
+780.96,2,Acute neurological
+780.99,2,Acute neurological
+781,6,Debility and fatigue
+781.2,6,Debility and fatigue
+781.99,6,Debility and fatigue
+782,6,Debility and fatigue
+782.1,6,Debility and fatigue
+782.2,6,Debility and fatigue
+782.3,6,Debility and fatigue
+782.4,6,Debility and fatigue
+782.61,6,Debility and fatigue
+783,8,Other complaints
+783.2,8,Other complaints
+783.3,8,Other complaints
+784,2,Acute neurological
+784.3,2,Acute neurological
+784.42,2,Acute neurological
+784.5,2,Acute neurological
+784.51,2,Acute neurological
+784.6,2,Acute neurological
+784.69,2,Acute neurological
+784.7,2,Acute neurological
+784.99,2,Acute neurological
+785,1,Cardiorespiratory
+785.1,1,Cardiorespiratory
+785.5,1,Cardiorespiratory
+785.51,1,Cardiorespiratory
+785.59,1,Cardiorespiratory
+785.9,1,Cardiorespiratory
+786,1,Cardiorespiratory
+786.09,1,Cardiorespiratory
+786.2,1,Cardiorespiratory
+786.3,1,Cardiorespiratory
+786.5,1,Cardiorespiratory
+786.51,1,Cardiorespiratory
+786.52,1,Cardiorespiratory
+786.59,1,Cardiorespiratory
+786.8,1,Cardiorespiratory
+786.9,1,Cardiorespiratory
+787,4,Medical-surgical abdominal
+787.01,4,Medical-surgical abdominal
+787.02,4,Medical-surgical abdominal
+787.03,4,Medical-surgical abdominal
+787.2,4,Medical-surgical abdominal
+787.3,4,Medical-surgical abdominal
+787.91,4,Medical-surgical abdominal
+787.99,4,Medical-surgical abdominal
+788,8,Other complaints
+788.1,8,Other complaints
+788.2,8,Other complaints
+788.4,8,Other complaints
+788.41,8,Other complaints
+788.42,8,Other complaints
+788.5,8,Other complaints
+788.9,8,Other complaints
+789,4,Medical-surgical abdominal
+789.01,4,Medical-surgical abdominal
+789.02,4,Medical-surgical abdominal
+789.03,4,Medical-surgical abdominal
+789.06,4,Medical-surgical abdominal
+789.09,4,Medical-surgical abdominal
+789.3,4,Medical-surgical abdominal
+789.39,4,Medical-surgical abdominal
+789.4,4,Medical-surgical abdominal
+789.5,4,Medical-surgical abdominal
+790.29,8,Other complaints
+792.89,8,Other complaints
+796.2,8,Other complaints
+797,6,Debility and fatigue
+798.2,6,Debility and fatigue
+799.3,6,Debility and fatigue
+799.8,6,Debility and fatigue
+799.9,6,Debility and fatigue
+804,5,Major trauma
+812,5,Major trauma
+813,8,Other complaints
+813.83,8,Other complaints
+816,8,Other complaints
+819,8,Other complaints
+820,5,Major trauma
+821,5,Major trauma
+823,8,Other complaints
+825,8,Other complaints
+830,8,Other complaints
+831,8,Other complaints
+831.09,8,Other complaints
+835,8,Other complaints
+838,8,Other complaints
+840,8,Other complaints
+840.9,8,Other complaints
+842,7,Initial low vital risk
+843,8,Other complaints
+843.9,8,Other complaints
+844,7,Initial low vital risk
+844.9,7,Initial low vital risk
+845,7,Initial low vital risk
+845.1,7,Initial low vital risk
+848,8,Other complaints
+850,5,Major trauma
+854,5,Major trauma
+867,8,Other complaints
+869,8,Other complaints
+871.99,8,Other complaints
+872,8,Other complaints
+873,8,Other complaints
+873.8,8,Other complaints
+875,8,Other complaints
+879.8,8,Other complaints
+882,8,Other complaints
+883.1,8,Other complaints
+890,8,Other complaints
+891,8,Other complaints
+892,8,Other complaints
+893,8,Other complaints
+900.9,8,Other complaints
+904,8,Other complaints
+905,8,Other complaints
+912,8,Other complaints
+916,8,Other complaints
+919,8,Other complaints
+92,8,Other complaints
+920,5,Major trauma
+921,7,Initial low vital risk
+921.3,7,Initial low vital risk
+921.9,7,Initial low vital risk
+922,7,Initial low vital risk
+923,7,Initial low vital risk
+923.9,7,Initial low vital risk
+924,7,Initial low vital risk
+924.5,7,Initial low vital risk
+924.8,7,Initial low vital risk
+924.9,7,Initial low vital risk
+925.1,8,Other complaints
+926,8,Other complaints
+930,7,Initial low vital risk
+930.9,7,Initial low vital risk
+931,8,Other complaints
+933,8,Other complaints
+937,8,Other complaints
+938,8,Other complaints
+945,8,Other complaints
+948,8,Other complaints
+956.6,8,Other complaints
+956.9,8,Other complaints
+959,8,Other complaints
+959.01,8,Other complaints
+959.09,8,Other complaints
+959.1,8,Other complaints
+959.11,8,Other complaints
+959.19,8,Other complaints
+959.2,8,Other complaints
+959.3,8,Other complaints
+959.4,8,Other complaints
+959.5,8,Other complaints
+959.6,8,Other complaints
+959.7,5,Major trauma
+959.8,8,Other complaints
+959.9,8,Other complaints
+965.9,3,Sepsis / potential infection
+975,3,Sepsis / potential infection
+975.2,3,Sepsis / potential infection
+980.4,3,Sepsis / potential infection
+986.5,3,Sepsis / potential infection
+988,3,Sepsis / potential infection
+99,8,Other complaints
+994.6,8,Other complaints
+995.2,3,Sepsis / potential infection
+995.3,3,Sepsis / potential infection
+995.9,3,Sepsis / potential infection
+996.77,8,Other complaints
+997,8,Other complaints
+999,8,Other complaints
+A09,3,Sepsis / potential infection
+A41.9,3,Sepsis / potential infection
+B00.1,3,Sepsis / potential infection
+B02.9,3,Sepsis / potential infection
+B30.1,3,Sepsis / potential infection
+B37.0,3,Sepsis / potential infection
+C80.0,8,Other complaints
+C85.90,8,Other complaints
+D18.01,8,Other complaints
+D64.9,8,Other complaints
+D68.32,8,Other complaints
+D73.89,8,Other complaints
+D84.9,3,Sepsis / potential infection
+D89.89,8,Other complaints
+D89.9,8,Other complaints
+E11.69,5,Major trauma
+E11.8,5,Major trauma
+E11.9,5,Major trauma
+E88.89,5,Major trauma
+E90.3,5,Major trauma
+E91.4,5,Major trauma
+E92.89,5,Major trauma
+E94.79,5,Major trauma
+F05,2,Acute neurological
+F10.229,7,Initial low vital risk
+F29,7,Initial low vital risk
+F32.9,7,Initial low vital risk
+F41.8,7,Initial low vital risk
+F41.9,7,Initial low vital risk
+F60.3,7,Initial low vital risk
+F69,7,Initial low vital risk
+F91.8,7,Initial low vital risk
+F91.9,7,Initial low vital risk
+G40.901,2,Acute neurological
+G40.909,2,Acute neurological
+G44.309,2,Acute neurological
+G47.10,2,Acute neurological
+G50.1,2,Acute neurological
+G54.4,2,Acute neurological
+G83.9,2,Acute neurological
+H00.019,7,Initial low vital risk
+H00.11,7,Initial low vital risk
+H00.19,7,Initial low vital risk
+H01.009,7,Initial low vital risk
+H01.9,7,Initial low vital risk
+H02.0,7,Initial low vital risk
+H02.059,7,Initial low vital risk
+H02.843,7,Initial low vital risk
+H02.844,7,Initial low vital risk
+H02.9,7,Initial low vital risk
+H03,7,Initial low vital risk
+H04.1,7,Initial low vital risk
+H04.129,7,Initial low vital risk
+H04.209,7,Initial low vital risk
+H04.30,7,Initial low vital risk
+H04.322,7,Initial low vital risk
+H04.561,7,Initial low vital risk
+H04.89,7,Initial low vital risk
+H04.9,7,Initial low vital risk
+H10,7,Initial low vital risk
+H10.019,7,Initial low vital risk
+H10.212,7,Initial low vital risk
+H10.22,7,Initial low vital risk
+H10.3,7,Initial low vital risk
+H10.31,7,Initial low vital risk
+H10.89,7,Initial low vital risk
+H10.9,7,Initial low vital risk
+H11.3,7,Initial low vital risk
+H11.33,7,Initial low vital risk
+H11.4,7,Initial low vital risk
+H11.442,7,Initial low vital risk
+H13,7,Initial low vital risk
+H15.9,7,Initial low vital risk
+H16.009,7,Initial low vital risk
+H16.049,7,Initial low vital risk
+H16.149,7,Initial low vital risk
+H16.209,7,Initial low vital risk
+H18.2,7,Initial low vital risk
+H18.20,7,Initial low vital risk
+H20.9,7,Initial low vital risk
+H33.21,7,Initial low vital risk
+H33.22,7,Initial low vital risk
+H40.052,7,Initial low vital risk
+H40.059,7,Initial low vital risk
+H43.1,7,Initial low vital risk
+H43.11,7,Initial low vital risk
+H43.819,7,Initial low vital risk
+H43.9,7,Initial low vital risk
+H44,7,Initial low vital risk
+H44.1,7,Initial low vital risk
+H44.13,7,Initial low vital risk
+H53.13,7,Initial low vital risk
+H53.132,7,Initial low vital risk
+H53.19,7,Initial low vital risk
+H53.2,7,Initial low vital risk
+H53.34,7,Initial low vital risk
+H53.5,7,Initial low vital risk
+H53.8,7,Initial low vital risk
+H53.9,7,Initial low vital risk
+H54.2X,7,Initial low vital risk
+H54.7,7,Initial low vital risk
+H57.1,7,Initial low vital risk
+H57.10,7,Initial low vital risk
+H57.13,7,Initial low vital risk
+H57.4,7,Initial low vital risk
+H57.8,7,Initial low vital risk
+H57.89,7,Initial low vital risk
+H57.9,7,Initial low vital risk
+H58,7,Initial low vital risk
+H59.89,7,Initial low vital risk
+H60.3,7,Initial low vital risk
+H61.23,7,Initial low vital risk
+H65.23,7,Initial low vital risk
+H66.003,7,Initial low vital risk
+H66.90,7,Initial low vital risk
+H71.93,7,Initial low vital risk
+H81.09,7,Initial low vital risk
+H81.1,7,Initial low vital risk
+H81.49,7,Initial low vital risk
+H90.2,7,Initial low vital risk
+H91.9,7,Initial low vital risk
+H91.90,7,Initial low vital risk
+H92.0,7,Initial low vital risk
+H92.01,7,Initial low vital risk
+H92.09,7,Initial low vital risk
+H92.1,7,Initial low vital risk
+H92.20,7,Initial low vital risk
+H93.19,7,Initial low vital risk
+H93.9,7,Initial low vital risk
+H93.93,7,Initial low vital risk
+I10,1,Cardiorespiratory
+I16.9,1,Cardiorespiratory
+I20.9,1,Cardiorespiratory
+I21.3,1,Cardiorespiratory
+I21.9,1,Cardiorespiratory
+I46.9,1,Cardiorespiratory
+I48.91,1,Cardiorespiratory
+I49.49,1,Cardiorespiratory
+I50,1,Cardiorespiratory
+I50.9,1,Cardiorespiratory
+I63.9,2,Acute neurological
+I67.8,1,Cardiorespiratory
+I67.81,1,Cardiorespiratory
+I67.89,1,Cardiorespiratory
+I70.201,1,Cardiorespiratory
+I73.9,1,Cardiorespiratory
+I74.4,1,Cardiorespiratory
+I74.9,1,Cardiorespiratory
+I79.2,1,Cardiorespiratory
+I80.3,1,Cardiorespiratory
+I80.9,1,Cardiorespiratory
+I87.2,1,Cardiorespiratory
+I88.9,1,Cardiorespiratory
+I99.9,1,Cardiorespiratory
+IV3.700,8,Other complaints
+J00,7,Initial low vital risk
+J11,3,Sepsis / potential infection
+J11.1,3,Sepsis / potential infection
+J18.9,1,Cardiorespiratory
+J30.9,7,Initial low vital risk
+J31.2,8,Other complaints
+J33.9,8,Other complaints
+J34.8,8,Other complaints
+J34.89,8,Other complaints
+J39.8,7,Initial low vital risk
+J41.0,8,Other complaints
+J44,1,Cardiorespiratory
+J44.0,1,Cardiorespiratory
+J44.901,1,Cardiorespiratory
+J45.90,1,Cardiorespiratory
+J45.901,1,Cardiorespiratory
+J45.909,1,Cardiorespiratory
+J93.9,8,Other complaints
+J98.09,8,Other complaints
+K08.9,4,Medical-surgical abdominal
+K11.7,4,Medical-surgical abdominal
+K12.1,4,Medical-surgical abdominal
+K13.79,4,Medical-surgical abdominal
+K14.6,4,Medical-surgical abdominal
+K29.7,4,Medical-surgical abdominal
+K40.40,4,Medical-surgical abdominal
+K42,4,Medical-surgical abdominal
+K52.9,4,Medical-surgical abdominal
+K57.32,4,Medical-surgical abdominal
+K59,4,Medical-surgical abdominal
+K59.0,4,Medical-surgical abdominal
+K59.00,4,Medical-surgical abdominal
+K59.1,4,Medical-surgical abdominal
+K62.5,4,Medical-surgical abdominal
+K62.89,4,Medical-surgical abdominal
+K62.9,4,Medical-surgical abdominal
+K80.80,4,Medical-surgical abdominal
+K82.9,4,Medical-surgical abdominal
+K91.840,4,Medical-surgical abdominal
+K92.0,4,Medical-surgical abdominal
+K92.01,4,Medical-surgical abdominal
+K92.1,4,Medical-surgical abdominal
+K92.2,4,Medical-surgical abdominal
+L00,7,Initial low vital risk
+L03.019,7,Initial low vital risk
+L03.119,7,Initial low vital risk
+L03.90,7,Initial low vital risk
+L08.0,7,Initial low vital risk
+L08.89,7,Initial low vital risk
+L08.9,7,Initial low vital risk
+L25.9,7,Initial low vital risk
+L29.9,7,Initial low vital risk
+L30.9,7,Initial low vital risk
+L50,7,Initial low vital risk
+L50.9,7,Initial low vital risk
+L57.0,7,Initial low vital risk
+L57.10,7,Initial low vital risk
+L81,7,Initial low vital risk
+L81.8,7,Initial low vital risk
+L82.1,7,Initial low vital risk
+L98,7,Initial low vital risk
+L98.8,7,Initial low vital risk
+L98.9,7,Initial low vital risk
+M04.1,8,Other complaints
+M12.9,8,Other complaints
+M19.90,8,Other complaints
+M20.001,8,Other complaints
+M22.50,8,Other complaints
+M24.8,8,Other complaints
+M24.80,8,Other complaints
+M25.50,7,Initial low vital risk
+M25.51,7,Initial low vital risk
+M25.56,7,Initial low vital risk
+M25.561,7,Initial low vital risk
+M25.562,7,Initial low vital risk
+M25.569,7,Initial low vital risk
+M26.69,8,Other complaints
+M35.9,8,Other complaints
+M46.20,8,Other complaints
+M46.40,8,Other complaints
+M54.2,7,Initial low vital risk
+M54.30,7,Initial low vital risk
+M54.4,7,Initial low vital risk
+M54.5,7,Initial low vital risk
+M54.6,7,Initial low vital risk
+M54.9,7,Initial low vital risk
+M57.9,8,Other complaints
+M60,8,Other complaints
+M71.20,8,Other complaints
+M79,7,Initial low vital risk
+M79.10,7,Initial low vital risk
+M79.2,7,Initial low vital risk
+M79.6,7,Initial low vital risk
+M79.60,7,Initial low vital risk
+M79.606,7,Initial low vital risk
+M79.609,7,Initial low vital risk
+M79.7,7,Initial low vital risk
+M79.81,7,Initial low vital risk
+M79.89,7,Initial low vital risk
+M89.9,8,Other complaints
+N10,8,Other complaints
+N23,4,Medical-surgical abdominal
+N30.00,8,Other complaints
+N30.90,8,Other complaints
+N39.0,8,Other complaints
+N39.43,8,Other complaints
+N45.9,8,Other complaints
+N48.1,8,Other complaints
+N48.29,8,Other complaints
+N48.89,8,Other complaints
+N50.81,8,Other complaints
+N50.819,8,Other complaints
+N50.82,8,Other complaints
+N50.9,8,Other complaints
+N54.5,8,Other complaints
+N61,8,Other complaints
+N64.4,8,Other complaints
+N73.9,8,Other complaints
+N76.6,8,Other complaints
+N92.1,8,Other complaints
+N92.4,8,Other complaints
+N92.6,8,Other complaints
+N93.9,8,Other complaints
+N94.9,8,Other complaints
+R00.0,1,Cardiorespiratory
+R00.2,1,Cardiorespiratory
+R00.9,1,Cardiorespiratory
+R04.0,1,Cardiorespiratory
+R04.2,1,Cardiorespiratory
+R05,1,Cardiorespiratory
+R06,1,Cardiorespiratory
+R06.0,1,Cardiorespiratory
+R06.00,1,Cardiorespiratory
+R06.02,1,Cardiorespiratory
+R06.09,1,Cardiorespiratory
+R06.89,1,Cardiorespiratory
+R06.9,1,Cardiorespiratory
+R07.0,1,Cardiorespiratory
+R07.09,1,Cardiorespiratory
+R07.1,1,Cardiorespiratory
+R07.2,1,Cardiorespiratory
+R07.4,1,Cardiorespiratory
+R07.81,1,Cardiorespiratory
+R07.89,1,Cardiorespiratory
+R07.898,1,Cardiorespiratory
+R07.9,1,Cardiorespiratory
+R08.89,1,Cardiorespiratory
+R09.2,1,Cardiorespiratory
+R09.8,1,Cardiorespiratory
+R09.89,1,Cardiorespiratory
+R10,4,Medical-surgical abdominal
+R10.11,4,Medical-surgical abdominal
+R10.12,4,Medical-surgical abdominal
+R10.13,4,Medical-surgical abdominal
+R10.2,4,Medical-surgical abdominal
+R10.3,4,Medical-surgical abdominal
+R10.30,4,Medical-surgical abdominal
+R10.31,4,Medical-surgical abdominal
+R10.32,4,Medical-surgical abdominal
+R10.4,4,Medical-surgical abdominal
+R10.6,4,Medical-surgical abdominal
+R10.83,4,Medical-surgical abdominal
+R10.84,4,Medical-surgical abdominal
+R10.9,4,Medical-surgical abdominal
+R11,4,Medical-surgical abdominal
+R11.0,4,Medical-surgical abdominal
+R11.11,4,Medical-surgical abdominal
+R11.2,4,Medical-surgical abdominal
+R13,4,Medical-surgical abdominal
+R13.10,4,Medical-surgical abdominal
+R14,4,Medical-surgical abdominal
+R14.0,4,Medical-surgical abdominal
+R17,8,Other complaints
+R17.9,8,Other complaints
+R18,8,Other complaints
+R18.8,8,Other complaints
+R19.00,4,Medical-surgical abdominal
+R19.09,4,Medical-surgical abdominal
+R19.7,4,Medical-surgical abdominal
+R19.8,4,Medical-surgical abdominal
+R20.2,7,Initial low vital risk
+R20.8,7,Initial low vital risk
+R21,7,Initial low vital risk
+R22.0,7,Initial low vital risk
+R22.9,7,Initial low vital risk
+R23.1,1,Cardiorespiratory
+R23.3,7,Initial low vital risk
+R23.8,7,Initial low vital risk
+R23.9,7,Initial low vital risk
+R26.2,2,Acute neurological
+R26.8,2,Acute neurological
+R26.81,2,Acute neurological
+R27.9,2,Acute neurological
+R29,8,Other complaints
+R29.898,8,Other complaints
+R30.0,8,Other complaints
+R30.9,8,Other complaints
+R31,8,Other complaints
+R31.0,8,Other complaints
+R31.9,8,Other complaints
+R32,8,Other complaints
+R33.9,8,Other complaints
+R34,8,Other complaints
+R35.0,8,Other complaints
+R39,8,Other complaints
+R39.15,8,Other complaints
+R39.89,8,Other complaints
+R40,2,Acute neurological
+R40.0,2,Acute neurological
+R40.1,2,Acute neurological
+R40.20,2,Acute neurological
+R41.0,2,Acute neurological
+R41.2,2,Acute neurological
+R41.82,2,Acute neurological
+R42,2,Acute neurological
+R44.3,8,Other complaints
+R45.81,7,Initial low vital risk
+R47,7,Initial low vital risk
+R47.01,7,Initial low vital risk
+R47.1,7,Initial low vital risk
+R47.89,7,Initial low vital risk
+R48.1,8,Other complaints
+R49.0,8,Other complaints
+R49.8,8,Other complaints
+R50.1,3,Sepsis / potential infection
+R50.9,3,Sepsis / potential infection
+R51,2,Acute neurological
+R51.9,2,Acute neurological
+R52,6,Debility and fatigue
+R52.9,6,Debility and fatigue
+R53,6,Debility and fatigue
+R53.1,6,Debility and fatigue
+R53.81,6,Debility and fatigue
+R53.83,6,Debility and fatigue
+R53.91,6,Debility and fatigue
+R54,6,Debility and fatigue
+R55,1,Cardiorespiratory
+R56,8,Other complaints
+R56.9,8,Other complaints
+R57.9,8,Other complaints
+R58,8,Other complaints
+R59,6,Debility and fatigue
+R59.9,6,Debility and fatigue
+R60.0,6,Debility and fatigue
+R60.1,6,Debility and fatigue
+R60.9,6,Debility and fatigue
+R62.3,6,Debility and fatigue
+R62.5,6,Debility and fatigue
+R65.10,3,Sepsis / potential infection
+R68,8,Other complaints
+R68.69,8,Other complaints
+R68.89,8,Other complaints
+R68.9,8,Other complaints
+R69,8,Other complaints
+R73.9,8,Other complaints
+R91.8,8,Other complaints
+R93.6,8,Other complaints
+R97.89,8,Other complaints
+R99,8,Other complaints
+S00.1,5,Major trauma
+S00.85,5,Major trauma
+S00.93XA,5,Major trauma
+S01.90,5,Major trauma
+S01.90XA,5,Major trauma
+S03.0,5,Major trauma
+S03.00XA,5,Major trauma
+S05.00XA,5,Major trauma
+S05.10XA,5,Major trauma
+S05.5,5,Major trauma
+S05.90XA,5,Major trauma
+S06.0X0A,5,Major trauma
+S06.0XDA,5,Major trauma
+S06.9X2A,2,Acute neurological
+S06.9X9A,2,Acute neurological
+S09.9,5,Major trauma
+S09.90,5,Major trauma
+S09.90XA,5,Major trauma
+S20.00XA,5,Major trauma
+S20.20XA,5,Major trauma
+S21.01,5,Major trauma
+S29.9,5,Major trauma
+S31.000A,5,Major trauma
+S32.50,5,Major trauma
+S32.9XXA,5,Major trauma
+S33.8XXA,5,Major trauma
+S37.90XA,5,Major trauma
+S39.82X4,5,Major trauma
+S39.82XA,5,Major trauma
+S39.92,5,Major trauma
+S40.0,5,Major trauma
+S40.019A,5,Major trauma
+S40.029A,5,Major trauma
+S42.3,5,Major trauma
+S42.30,5,Major trauma
+S42.309A,5,Major trauma
+S43.006A,5,Major trauma
+S43.409A,5,Major trauma
+S49.80XA,5,Major trauma
+S49.8XA,5,Major trauma
+S49.9,5,Major trauma
+S52,5,Major trauma
+S52.57,5,Major trauma
+S52.9,5,Major trauma
+S52.90XA,5,Major trauma
+S53.409A,5,Major trauma
+S59.809A,5,Major trauma
+S59.90,5,Major trauma
+S60.929A,5,Major trauma
+S61.00,5,Major trauma
+S61.2,5,Major trauma
+S61.229A,5,Major trauma
+S61.409A,5,Major trauma
+S62.609A,5,Major trauma
+S63.509A,5,Major trauma
+S69.80XA,5,Major trauma
+S69.9,5,Major trauma
+S70.0,5,Major trauma
+S71.009A,5,Major trauma
+S72.00,5,Major trauma
+S72.009A,5,Major trauma
+S72.9,5,Major trauma
+S72.90XA,5,Major trauma
+S73.006A,5,Major trauma
+S73.109A,5,Major trauma
+S73.119A,5,Major trauma
+S79.819,5,Major trauma
+S79.819A,5,Major trauma
+S79.91,5,Major trauma
+S80.10X4,5,Major trauma
+S80.10XA,5,Major trauma
+S80.80XA,5,Major trauma
+S81.009A,5,Major trauma
+S81.809A,5,Major trauma
+S82.899,5,Major trauma
+S82.899A,5,Major trauma
+S83.429A,5,Major trauma
+S83.9,5,Major trauma
+S83.90XA,5,Major trauma
+S89.80,5,Major trauma
+S89.80XA,5,Major trauma
+S89.9,5,Major trauma
+S90.3,5,Major trauma
+S91.109,5,Major trauma
+S91.109A,5,Major trauma
+S91.309,5,Major trauma
+S91.309A,5,Major trauma
+S92.009A,5,Major trauma
+S93,5,Major trauma
+S93.06XA,5,Major trauma
+S93.40,5,Major trauma
+S93.409A,5,Major trauma
+S99.91,5,Major trauma
+T07,5,Major trauma
+T07.XXXA,5,Major trauma
+T14,5,Major trauma
+T14.8,5,Major trauma
+T14.8XXA,5,Major trauma
+T14.90,5,Major trauma
+T14.90XA,5,Major trauma
+T14.90XD,5,Major trauma
+T14.91,5,Major trauma
+T14.91X4,5,Major trauma
+T14.91XA,5,Major trauma
+T14.991XA,5,Major trauma
+T15,7,Initial low vital risk
+T15.0,7,Initial low vital risk
+T15.00XA,7,Initial low vital risk
+T15.02XA,7,Initial low vital risk
+T15.90XA,7,Initial low vital risk
+T16,8,Other complaints
+T16.9,8,Other complaints
+T16.9XXA,8,Other complaints
+T17,8,Other complaints
+T17.298A,8,Other complaints
+T17.81,8,Other complaints
+T17.900,8,Other complaints
+T18.9XXA,8,Other complaints
+T45.511,3,Sepsis / potential infection
+T50,3,Sepsis / potential infection
+T50.995A,3,Sepsis / potential infection
+T51.0X1A,3,Sepsis / potential infection
+T67.01,3,Sepsis / potential infection
+T71.9XXA,1,Cardiorespiratory
+T76.91XA,8,Other complaints
+T78,1,Cardiorespiratory
+T78.3,1,Cardiorespiratory
+T78.40,1,Cardiorespiratory
+T78.40XA,1,Cardiorespiratory
+T78.9XXS,1,Cardiorespiratory
+T79.8XXS,5,Major trauma
+T85.21,8,Other complaints
+U10,8,Other complaints
+V40.3,5,Major trauma
+V44.4,5,Major trauma
+V54.8,5,Major trauma
+V55.9,5,Major trauma
+V56.0,5,Major trauma
+V58.1,5,Major trauma
+V58.49,5,Major trauma
+V62.89,5,Major trauma
+V62.9,5,Major trauma
+V65.9,5,Major trauma
+V66.7,5,Major trauma
+V67,5,Major trauma
+V67.0,5,Major trauma
+V68,5,Major trauma
+V70.9,5,Major trauma
+V71.9,5,Major trauma
+V72,5,Major trauma
+V72.31,5,Major trauma
+W01,5,Major trauma
+W10,5,Major trauma
+W19.XXXA,5,Major trauma
+X50.9,8,Other complaints
+X58,8,Other complaints
+Z01.8,8,Other complaints
+Z01.89,8,Other complaints
+Z03.89,8,Other complaints
+Z04.9,8,Other complaints
+Z09,8,Other complaints
+Z44.8,8,Other complaints
+Z46.6,8,Other complaints
+Z47.89,8,Other complaints
+Z48.0,8,Other complaints
+Z48.00,8,Other complaints
+Z48.89,8,Other complaints
+Z51.89,8,Other complaints
+Z53.29,8,Other complaints
+Z71.3,8,Other complaints
+Z71.9,8,Other complaints
+Z76.0,8,Other complaints
+Z76.89,8,Other complaints
+Z86.718,8,Other complaints

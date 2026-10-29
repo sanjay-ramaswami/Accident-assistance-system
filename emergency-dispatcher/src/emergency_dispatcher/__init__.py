@@ -1,0 +1,2 @@
+"""Emergency dispatcher hackathon package."""
+
